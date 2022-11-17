@@ -1,0 +1,21 @@
+.social__list {
+    display: flex;
+    gap: 24px;
+}
+.social__item {
+    width: 32px;
+    height: 32px;
+    transition: .4s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+.social__t {
+    fill: #2F9EEE;
+}
+.social__w {
+    fill: #4ACD57;
+}
+.social__v {
+    fill: #9451D7;
+}

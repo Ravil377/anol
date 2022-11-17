@@ -1,25 +1,29 @@
 .logo {
+    grid-area: logo;
+    background: #FF001A;
+    width: 100%;
     display: flex;
-    align-items: center;
-    column-gap: 40px;
-    width: fit-content;
-    p {
-        display: none;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 130%;
-        color: #555557;
-        max-width: 275px;
-        @media (min-width: 1300px) {
-            display: block;
+    
+    &:hover {
+        svg {
+            transform: scale(1.1);
         }
     }
     svg {
-        width: 220px;
-        height: 40px;
-        @media(min-width: 992px) {
-            width: 277px;
-            height: 50px;
+        margin: auto;
+        transition: transform .8s ease-out;
+        width: 68px;
+        height: 45px;
+        @media (min-width: 1500px) {
+            width: 165px;
+            height: 110px;
         }
     }
+}
+.logo__text {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 130%;
+    color: #CFD7DA;
+    width: fit-content;
 }

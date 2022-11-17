@@ -2,7 +2,7 @@ import enquire from 'enquire.js'
 import { overlayAdd, overlayRemove } from '../overlay/overlay'
 
 const $hamburger = document.querySelector('.hamburger--js');
-const $mainmenu = document.querySelector('.menu-js');
+const $mainmenu = document.querySelector('.header-js');
 // const $mainmenu = document.querySelector('.mainmenu--js')
 // const mobilMenu = document.querySelector('.header__mobil-menu--js');
 
@@ -29,7 +29,7 @@ const clickHandler = event => {
 	}
 }
 
-enquire.register('screen and (max-width: 1400px)', {
+enquire.register('screen and (max-width: 1500px)', {
 	// deferSetup: true,
 	match() {
 		$hamburger.addEventListener('click', clickHandler)
