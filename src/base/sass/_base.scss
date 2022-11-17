@@ -45,14 +45,26 @@ body {
 	min-width: 320px;
 	overflow: auto;
 	z-index: 100;
+	color: #191C1F;
+	background: linear-gradient(180deg, #050816 2.65%, rgba(5, 8, 22, 0) 136.84%), linear-gradient(0deg, #26232E 1.74%, rgba(5, 8, 22, 0) 27.06%), rgba(5, 8, 22, 1);
+
 	// overflow: hidden;
 	&.is-active {
 		overflow: hidden;
 	}
 }
-	
+
+html {
+	font-size: 12px;
+
+	@media (min-width: 768px) {
+		font-size: 16px;
+	}
+}	
+
 html, body {
 	min-height: 4777px;
+	
 }
 body {
 	/* Временно для сетки */
@@ -73,5 +85,6 @@ body {
 		"content"
 		"footer";
 	min-height: 100vh;
+
 }
   

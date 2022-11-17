@@ -35,13 +35,14 @@ enquire.register('screen and (max-width: 1500px)', {
 		$hamburger.addEventListener('click', clickHandler)
 		document.addEventListener('click', event => {
 			if (event.target.dataset.backdrop === 'overlay') {
-				hideMenu()
+				hideMenu();
 			}
 		})
 		// $closeBtn.addEventListener('click', hideMenu)
 	},
 	unmatch() {
 		$hamburger.removeEventListener('click', clickHandler)
+		hideMenu();
 		// $closeBtn.removeEventListener('click', hideMenu)
 	}
 })

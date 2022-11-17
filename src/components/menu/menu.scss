@@ -28,7 +28,10 @@
     background: unset;
     
     transition: .4s;
-    padding: 25px 0;
+    padding: 17.5px 0;
+    @media (min-width: 1500px) {
+        padding: 25px 0;
+    }
     svg {
         fill: white;
         transition: .4s;
@@ -99,9 +102,11 @@
 }
 .menu__list {
     overflow: hidden;
-    @media (max-width: 1500px) {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 1500px) {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;    
     }
 }
 .menu__list > a {

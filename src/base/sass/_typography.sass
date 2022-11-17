@@ -1,7 +1,23 @@
 /* Titles
    ========================================================================= */
-h1, .h1,
-h2, .h2,
+h1, .h1
+    font-size: 40px
+    line-height: 110%
+    margin: 0
+    font-family: 'bebas'
+    font-weight: normal
+    text-transform: uppercase
+    @media (min-width: 768px)
+        font-size: 90px
+h2, .h2
+    font-weight: 700
+    margin: 0
+    font-size: 35px
+    line-height: 120%
+    text-transform: uppercase
+    font-family: 'bebas'
+    @media (min-width: 768px)
+        font-size: 55px
 h3, .h3,
 h4, .h4,
 h5, .h5,
@@ -21,9 +37,9 @@ h1, .h1
     /* 36px - 24px */
     @include responsive-tlt(24px, 36px)
 
-h2, .h2
+//h2, .h2
     /* 30px - 22px */
-    @include responsive-tlt(22px, 30px)
+    //@include responsive-tlt(22px, 30px)
 
 h3, .h3
     /* 26px - 20px */

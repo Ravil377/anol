@@ -4,11 +4,20 @@
     font-size: 16px;
     line-height: 130%;
     color: #FFFFFF;
-    padding: 19px 28px;
+    padding: 15px;
+    width: 100%;
     border: none;
     height: fit-content;
-    width: fit-content;
     transition: .4s;
+    text-align: center;
+    justify-content: center;
+    @media (min-width: 576px) {
+        padding: 15px 28px;
+        width: fit-content;
+    }
+    @media (min-width: 768px) {
+        padding: 19px 28px;
+    }
     &:hover {
         background: white;
         color: #FF001A;

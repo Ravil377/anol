@@ -16,9 +16,10 @@ html(lang="ru")
     include ./head
 
     body(class=pageClass)
-        include ../../components/header/header
+        include ../../components/header/header        
         main.main
-        //- block welcome
+            block benefits
+            block industries
         //- if (pageClass === 'action')
         //-     .outer(style="margin-top: 32px;")
         //-         .inner

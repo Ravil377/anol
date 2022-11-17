@@ -7,7 +7,7 @@ import './form/form'
 // Hamburger
 import './hamburger/hamburger'
 import './overlay/overlay'
-import './welcome/welcome'
-import './outwork/outwork'
+// import './welcome/welcome'
+import './industries/industries'
 
 // import './header/header'

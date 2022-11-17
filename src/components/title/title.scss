@@ -1,34 +1,10 @@
 .title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 130%;
-    color: #584C3B;
-    margin: 0;
-    span {
-        font-weight: 500;
-    }
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 120%;
+    text-transform: uppercase;
+    font-family: 'bebas';
     @media (min-width: 768px) {
-        font-size: 45px;
+        font-size: 55px;
     }
-}
-.text {
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 150%;
-    color: #000000;
-    &._bold {
-        font-weight: 500;
-    }
-    span {
-        font-weight: 500;
-    }
-    @media (min-width: 768px) {
-        font-size: 18px;
-    }
-}
-.title__container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
 }
