@@ -1,7 +1,8 @@
 .btn {
+    display: block;
     background: #FF001A;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 130%;
     color: #FFFFFF;
     padding: 15px;
@@ -11,12 +12,21 @@
     transition: .4s;
     text-align: center;
     justify-content: center;
+    &_black {
+        background: #191C1F;
+    }
+    &_white {
+        border: 1px solid #000000;
+        background: white;
+        color: #191C1F;
+    }
     @media (min-width: 576px) {
         padding: 15px 28px;
         width: fit-content;
     }
     @media (min-width: 768px) {
         padding: 19px 28px;
+        font-size: 16px;
     }
     &:hover {
         background: white;

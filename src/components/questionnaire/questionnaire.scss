@@ -1,0 +1,96 @@
+.questionnaire {
+    padding-top: 32px;
+    overflow: hidden;
+    @media (min-width: 768px) {
+        padding-top: 97px;
+    }
+    .outer {
+        @media (max-width: 992px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+.questionnaire__container {
+    background: #F5F7F9;
+    padding: 40px 29px;
+    position: relative;
+    z-index: 2;
+    @media (min-width: 1400px) {
+        padding: 45px 141px;
+    }
+    & > img {
+        width: 167px;
+        height: 180px;
+        object-fit: contain;
+        position: absolute;
+        right: 20px;
+        top: -20px;
+        z-index: 1;
+        @media (min-width: 768px) {
+            top: -150px;
+            right: -50px;
+            width: 540px;
+            height: 580px;
+        }
+        @media (min-width: 992px) {
+            
+            right: 20px;
+        }
+        @media (min-width: 1400px) {
+            right: 198px;
+        }
+    }
+    .icon {
+        width: 37px;
+        height: 37px;
+        margin-bottom: 8px;
+        margin-left: 10px;
+        @media (min-width: 768px) {
+            width: 58px;
+            height: 58px;
+            margin-left: 40px;
+        }
+    }
+    button.btn {
+        margin-top: 30px;
+        width: 100%;
+        @media (min-width: 576px) {
+            max-width: 319px;    
+            margin-top: 24px;
+        }
+    }
+    .form__checkbox {
+        margin-top: 19px;
+        @media (min-width: 768px) {
+            margin-top: 72px;
+        }
+    }
+}
+.questionnaire__content {
+    max-width: 670px;
+    position: relative;
+    z-index: 2;
+    p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        margin-top: 18px;
+        display: block;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        @media (min-width: 768px) {
+            font-size: 24px;
+            margin-top: 13px;
+        }
+    }
+    h2 {
+        @media (max-width: 576px) {
+            width: min-content;
+        }
+        @media (max-width: 768px) {
+            white-space: wrap;
+        }
+    }
+}

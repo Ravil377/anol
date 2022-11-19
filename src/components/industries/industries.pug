@@ -1,54 +1,63 @@
-.industries
+section.industries
     .outer 
         .inner 
             h2 отрасли применения
-            .industries__slider.industries__slider-js 
-                .industries__swiper.swiper-wrapper
-                    .industries__slide.swiper-slide 
-                        img(src="./images/otrasli/mostostroenie.jpg" alt="Мостостроение")
-                        .industries__slide-content
-                            .industries__label более 16 вариантов
-                            h3.industries__title Мостостроение
-                        .industries__slide-hover
-                            p.industries__desc Нефтегазовый комплекс — обобщённое название группы
-                            +btn('Подробная информация','',true)
-                    .industries__slide.swiper-slide 
-                        img(src="./images/otrasli/neftandgaz.jpg" alt="Нефтяная и газовая промышленность")
-                        .industries__slide-content
-                            .industries__label более 20 вариантов
-                            h3.industries__title Нефтяная и газовая промышленность
-                        .industries__slide-hover
-                            p.industries__desc Нефтегазовый комплекс — обобщённое название группы
-                            +btn('Подробная информация','',true)
-                    .industries__slide.swiper-slide 
-                        img(src="./images/otrasli/stroit.jpg" alt="Промышленно-гражданское строительство")
-                        .industries__slide-content
-                            .industries__label более 16 вариантов
-                            h3.industries__title Промышленно-гражданское строительство
-                        .industries__slide-hover
-                            p.industries__desc Нефтегазовый комплекс — обобщённое название группы
-                            +btn('Подробная информация','',true)
-                    .industries__slide.swiper-slide 
-                        img(src="./images/otrasli/him.jpg" alt="Химическая промышленность")
-                        .industries__slide-content
-                            .industries__label более 19 вариантов
-                            h3.industries__title Химическая промышленность
-                        .industries__slide-hover
-                            p.industries__desc Нефтегазовый комплекс — обобщённое название группы
-                            +btn('Подробная информация','',true)
-                    .industries__slide.swiper-slide 
-                        img(src="./images/otrasli/telecom.jpg" alt="Телекоммуникации и связь")
-                        .industries__slide-content
-                            .industries__label более 25 вариантов
-                            h3.industries__title Телекоммуникации и связь
-                        .industries__slide-hover
-                            p.industries__desc Нефтегазовый комплекс — обобщённое название группы
-                            +btn('Подробная информация','',true)
-                    .industries__slide.swiper-slide 
-                        img(src="./images/otrasli/mashin.jpg" alt="Машиностроение")
-                        .industries__slide-content
-                            .industries__label более 25 вариантов
-                            h3.industries__title Машиностроение
-                        .industries__slide-hover
-                            p.industries__desc Нефтегазовый комплекс — обобщённое название группы
-                            +btn('Подробная информация','',true)
+            .industries__slider__container
+                .industries__slider.industries__slider-js 
+                    .industries__wrapper.swiper-wrapper.industries__wrapper-js
+                        div(data-href="#").industries__slide.swiper-slide 
+                            img(src="./images/otrasli/mostostroenie.jpg" alt="Мостостроение")
+                            .industries__slide-content
+                                .industries__label более 16 вариантов
+                                h3.industries__title Мостостроение
+                            .industries__slide-hover
+                                p.industries__desc Нефтегазовый комплекс — обобщённое название группы
+                                +btn('Подробная информация','',true)
+                        div(data-href="#").industries__slide.swiper-slide 
+                            img(src="./images/otrasli/neftandgaz.jpg" alt="Нефтяная и газовая промышленность")
+                            .industries__slide-content
+                                .industries__label более 20 вариантов
+                                h3.industries__title Нефтяная и газовая промышленность
+                            .industries__slide-hover
+                                p.industries__desc Нефтегазовый комплекс — обобщённое название группы
+                                +btn('Подробная информация','',true)
+                        div(data-href="#").industries__slide.swiper-slide 
+                            img(src="./images/otrasli/stroit.jpg" alt="Промышленно-гражданское строительство")
+                            .industries__slide-content
+                                .industries__label более 16 вариантов
+                                h3.industries__title Промышленно-гражданское строительство
+                            .industries__slide-hover
+                                p.industries__desc Нефтегазовый комплекс — обобщённое название группы
+                                +btn('Подробная информация','',true)
+                        div(data-href="#").industries__slide.swiper-slide 
+                            img(src="./images/otrasli/him.jpg" alt="Химическая промышленность")
+                            .industries__slide-content
+                                .industries__label более 19 вариантов
+                                h3.industries__title Химическая промышленность
+                            .industries__slide-hover
+                                p.industries__desc Нефтегазовый комплекс — обобщённое название группы
+                                +btn('Подробная информация','',true)
+                        div(data-href="#").industries__slide.swiper-slide 
+                            img(src="./images/otrasli/telecom.jpg" alt="Телекоммуникации и связь")
+                            .industries__slide-content
+                                .industries__label более 25 вариантов
+                                h3.industries__title Телекоммуникации и связь
+                            .industries__slide-hover
+                                p.industries__desc Нефтегазовый комплекс — обобщённое название группы
+                                +btn('Подробная информация','',true)
+                        div(data-href="#").industries__slide.swiper-slide 
+                            img(src="./images/otrasli/mashin.jpg" alt="Машиностроение")
+                            .industries__slide-content
+                                .industries__label более 25 вариантов
+                                h3.industries__title Машиностроение
+                            .industries__slide-hover
+                                p.industries__desc Нефтегазовый комплекс — обобщённое название группы
+                                +btn('Подробная информация','',true)
+                .industries__button-prev-js.navigation__button.navigation__button-prev
+                    <svg width="13" height="25" viewBox="0 0 13 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.4089 24.8158L13 24.2296L1.1817 12.5L13 0.770426L12.4089 0.184216L0 12.5L12.4089 24.8158Z"/>
+                    </svg>
+                .industries__button-next-js.navigation__button.navigation__button-next
+                    <svg width="13" height="25" viewBox="0 0 13 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.4089 24.8158L13 24.2296L1.1817 12.5L13 0.770426L12.4089 0.184216L0 12.5L12.4089 24.8158Z"/>
+                    </svg>

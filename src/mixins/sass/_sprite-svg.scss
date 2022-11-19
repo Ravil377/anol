@@ -7,8 +7,20 @@
     fill: currentColor;
 }
 
+.icon-arr {
+    width: math.div(13, 25) * 1em;
+}
+.icon-canister {
+    width: math.div(540, 579) * 1em;
+}
+.icon-check-list {
+    width: math.div(58, 58) * 1em;
+}
 .icon-dropdown {
     width: math.div(6, 4) * 1em;
+}
+.icon-flag {
+    width: math.div(29, 29) * 1em;
 }
 .icon-icon-logistica {
     width: math.div(29, 28) * 1em;
@@ -36,6 +48,9 @@
 }
 .icon-search {
     width: math.div(22, 22) * 1em;
+}
+.icon-search-icon {
+    width: math.div(25, 24) * 1em;
 }
 .icon-telegram {
     width: math.div(32, 33) * 1em;

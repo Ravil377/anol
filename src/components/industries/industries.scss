@@ -1,11 +1,38 @@
 .industries {
     padding-top: 50px;
+    .inner {
+        max-width: 1686px;
+    }
+    .outer {
+        @media (max-width: 768px) {
+            padding: 0;   
+        }
+    }
+    h2 {
+        padding: 0 24px;
+        @media (min-width: 768px) {
+            padding: 0 20px;    
+        }
+    }
 }
-.industries__slider {
+.industries__slider__container {
+    position: relative;
+}
+.industries__slider {  
     margin-top: 20px;
-    height: 504px;
-    overflow: hidden;
-    // height: 100%;
+    @media (min-width: 768px) {
+        margin: 20px 23px;
+        margin-bottom: 0;
+        height: 504px;
+        overflow: hidden;
+    }
+}
+.industries__wrapper {
+    flex-direction: column;
+    gap: 2px;
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
 }
 @keyframes width {
     from {max-width: 253px;}
@@ -22,16 +49,17 @@
     100% {opacity: 1; visibility:visible;}
 }
 .industries__slide {
-    max-width: 253px;
     width: 100%;
     position: relative;
-    // padding-top: 315px;
     display: flex;
     flex-direction: column;
     color: white;
     overflow: hidden;
-
     cursor: pointer;
+    min-height: 180px;
+    @media (min-width: 768px) {
+        max-width: 253px;
+    }
     &::after {
         content: '';
         position: absolute;
@@ -54,22 +82,23 @@
             position: relative;
         }
         .industries__slide-content {
-            // padding-bottom: 94px;
             margin-top: auto;
             min-height: auto;
             animation-name: zindex;
             animation-duration: .4s;
             animation-timing-function: linear;
+            @media (min-width: 768px) {
+                min-height: auto;
+            }
             .industries__desc {
                 max-height: 500px;
-                // display: block;
-
             }
             .industries__title {
                 font-size: 30px;
             }
         }
     }
+    
     &.swiper-slide {
         height: auto;
     }
@@ -111,10 +140,14 @@
         margin-top: auto;
         padding-left: 30px;
         padding-right: 30px;
-        padding-bottom: 17px;
-        min-height: 186px;
+        padding-bottom: 30px;
+        
         display: flex;
         flex-direction: column;
+        @media (min-width: 768px) {
+            min-height: 186px;
+            padding-bottom: 17px;
+        }
         .industries__label {
             font-weight: 600;
             font-size: 11px;
@@ -126,7 +159,6 @@
         }
         .industries__title {
             margin: 0;
-            // transition: .4s ease-out;
             margin-top: 18px;
             font-weight: 700;
             font-size: 20px;
