@@ -3,19 +3,13 @@ extends base/pug/base
 //- include ./components/links/links
 
 append variables
-    - var title = 'Главная страница сайта'
-    - var pageClass = 'homepage'
+    - var title = 'Каталог продукции'
+    - var pageClass = ''
     - var menuHref = '/'
 
-block benefits
-    include ./components/benefits/benefits 
-
-block industries
-    include ./components/industries/industries 
-
-block questionnaire
-    include ./components/questionnaire/questionnaire 
-
+block catalog-links
+    include ./components/catalog-links/catalog-links
+    
 block russia
     include ./components/russia/russia
 

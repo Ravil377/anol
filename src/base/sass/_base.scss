@@ -71,6 +71,25 @@ body {
 	// background-size: 1900px auto;
 	// background-repeat: no-repeat;
 	// background-position: top center;
+	&:not(.homepage) {
+		position: relative;
+		// background: linear-gradient(180deg, #050816 2.65%, rgba(5, 8, 22, 0) 136.84%), linear-gradient(0deg, #26232E 1.74%, rgba(5, 8, 22, 0) 27.06%), rgba(5, 8, 22, 1);
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			width: 100vw;
+			top: 0;
+			background: url(../images/bg.jpg) no-repeat;
+			background-size: 100%;
+			z-index: -2;
+			// height: 100%;
+			// max-height: 900px;
+		}
+		.welcome {
+			display: none;
+		}
+	}
 }
 
 .page {

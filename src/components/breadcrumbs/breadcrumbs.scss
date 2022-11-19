@@ -2,22 +2,22 @@
     ul {
         display: flex;
         li {
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 120%;
-            color: $grey;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 140%;
+            color: #B5B9BD;
             a {
                 color: inherit;
                 transition: .4s;
                 &:hover {
-                    color: $blue;
+                    color: #FF001A;
                 }
             }
             .breadcrumbs__divider {
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 120%;
-                color: #0042A4;
+                font-weight: 500;
+                font-size: 11px;
+                line-height: 140%;
+                color: #FF001A;
                 padding: 0 5px;
             }
         }

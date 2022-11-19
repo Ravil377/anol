@@ -1,11 +1,12 @@
-const modalOpenBtns = document.querySelectorAll('[data-id="callme"]');
+const modalOpenBtns = document.querySelectorAll('[data-modal="true"]');
 const modalCloseBtns = document.querySelectorAll('.modal__close-js');
 const modal = document.querySelector('.modal-js');
-const title = modal.querySelector('.modal__title');
 
 const closeModal = () => {
-    document.querySelector('.modal__form-js').reset();
+    modal.querySelectorAll('.modal__form-js').forEach(form => form.reset());
     modal.classList.remove('modal_opened');
+    modal.querySelector('[data-id="checklist"]').style.display = "none";
+    modal.querySelector('[data-id="callme"]').style.display = "none";
 }
 
 const checkKeyPress = (e) => {
@@ -20,9 +21,9 @@ const checkPressOverlay = (e) => {
     }
 };
   
-const openModal = () => {
+const openModal = (e) => {
+    e.target.dataset.id === 'checklist' ? modal.querySelector('[data-id="checklist"]').style.display = "block" : modal.querySelector('[data-id="callme"]').style.display = "block";
     modal.classList.add('modal_opened');
-    
 }
 
 modalCloseBtns.forEach(btn=>btn.addEventListener('click', closeModal));
@@ -30,15 +31,3 @@ modalCloseBtns.forEach(btn=>btn.addEventListener('click', closeModal));
 document.addEventListener('keydown', (e) => checkKeyPress(e));
 modal && modal.addEventListener("click", e => checkPressOverlay(e));
 modalOpenBtns.forEach(btn => btn.addEventListener('click', openModal));
-
-const loc = document.querySelector('.location');
-const location = loc.querySelector('.location__title-js');
-const locationCloseBtn = document.querySelector('.location__close-js');
-
-
-location && location.addEventListener('click', () => {
-    loc.classList.toggle('_active');
-})
-locationCloseBtn && locationCloseBtn.addEventListener('click', () => {
-    loc.classList.remove('_active');
-})

@@ -5,14 +5,14 @@
 .form__placeholder-container input {
     border: none;
     background: transparent;
-    border-bottom: 1px solid #5F5F61;
+    border: 1px solid #B5B9BD;
     box-sizing: border-box;
     outline: none;
     width: 100%;
     font-weight: 600;
     font-size: 18px;
     line-height: 100%;
-    color: #000000;
+    color: #191C1F;
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
@@ -30,7 +30,7 @@
     border: none;
     font-weight: 600;
     font-size: 16px;
-    color: #0B2349;
+    color: #191C1F;
     background: #F4F3F8;
     padding-top: 19px;
     padding-left: 21px;
@@ -44,7 +44,7 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color: #0B2349;
+    color: #191C1F;
     pointer-events: none;
     position: absolute;
     transition: all 200ms;
@@ -52,8 +52,9 @@
     transform: translateY(-50%);
     left: 19px;
     span {
-        font-size: 12px;
-        color: #A4A4A4;
+        font-weight: 400;
+        font-size: 15px;
+        color: #5C6064;
     }
 }
 // .form__placeholder-container textarea:focus,
@@ -64,15 +65,15 @@
 // .form__placeholder-container input:not(:placeholder-shown) {
 //     border: 2px solid #8010D6;
 // }
-// .form__placeholder-container textarea:focus + label,
-// .form__placeholder-container textarea:not(:placeholder-shown) + label {
-//     top: -10px;
-//     left: 0;
-//     // font-size: 11px;
-// }
+.form__placeholder-container textarea:focus + label,
+.form__placeholder-container textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 0;
+    // font-size: 11px;
+}
 .form__placeholder-container input:focus + label,
 .form__placeholder-container input:not(:placeholder-shown) + label {
-    top: 5px;
+    top: -15px;
     left: 0;
     // font-size: 11px;
 }
@@ -85,7 +86,6 @@
         cursor: pointer;
         font-weight: 400;
         font-size: 11px;
-        line-height: 130%;
         color: #5C6064;
         position: relative;
         padding-left: 33px;
@@ -139,18 +139,7 @@
         }
     }
 }
-label[for="phone"] {
-    padding-left: 26px;
-    &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 5px;
-        width: 16px;
-        height: 16px;
-        background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.46753H15V6.49003H1V3.46753Z' fill='white'/%3E%3Cpath d='M1 9.51001H15V12.5325H1V9.51001Z' fill='%23D52B1E'/%3E%3Cpath d='M1 6.48999H15V9.51249H1V6.48999Z' fill='%230039A6'/%3E%3C/svg%3E%0A");
-    }
-}
+
 // input[type="checkbox"].checkbox__switch{
 // 	font-size: 30px;
 // 	-webkit-appearance: none;

@@ -7,7 +7,6 @@ mixin input(labeltext, type, idinput)
     .form__placeholder-container.form__placeholder-container--js
         input(type=`${type}` name="" placeholder=" " required="required" id=`${idinput}` class="form__input--js")&attributes(attributes)
         label(for=`${idinput}`)!=labeltext
-        span(class=`input__error ${idinput}-error`)
 
 mixin textarea(labeltext, type, idinput)
     -
@@ -18,7 +17,6 @@ mixin textarea(labeltext, type, idinput)
     .form__placeholder-container.form__placeholder-container--js
         textarea(type=`${type}` name="" placeholder=" " required="required" id=`${idinput}` class="form__input--js")&attributes(attributes)
         label(for=`${idinput}`)!=labeltext
-        span(class=`input__error ${idinput}-error`)
 
 mixin checkbox(labeltext, idinput)
     -
@@ -27,11 +25,8 @@ mixin checkbox(labeltext, idinput)
         var links = links || '';
 
     .form__checkbox.form__placeholder-container--js
-        input(type='checkbox' name="" placeholder=" " required="required" id=`${idinput}` class="form__input--js" checked )&attributes(attributes)
+        input(type='checkbox' name="" required="required" id=`${idinput}` class="form__input--js")&attributes(attributes)
         label(for=`${idinput}`)!=labeltext
-        span(class=`input__error ${idinput}-error`)
-
-
 
 mixin switch()
     input(type="checkbox" class="checkbox__switch checkbox__switch--js")&attributes(attributes)

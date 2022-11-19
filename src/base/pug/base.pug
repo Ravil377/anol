@@ -16,8 +16,10 @@ html(lang="ru")
     include ./head
 
     body(class=pageClass)
-        include ../../components/header/header        
+        include ../../components/header/header   
+             
         main.main
+            block catalog-links
             block benefits
             block industries
             block questionnaire
@@ -78,7 +80,7 @@ html(lang="ru")
         //-         block videomessage
         //- Include footer
         include ../../components/footer/footer
-        //- include ../../components/modal/modal
+        include ../../components/modal/modal
         
         a.go-top.go-top--js(href='#')
             +icon('up')
