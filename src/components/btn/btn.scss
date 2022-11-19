@@ -19,6 +19,9 @@
         border: 1px solid #000000;
         background: white;
         color: #191C1F;
+        &:hover {
+            border: 1px solid #FF001A;
+        }
     }
     @media (min-width: 576px) {
         padding: 15px 28px;

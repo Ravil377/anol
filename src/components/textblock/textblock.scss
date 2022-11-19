@@ -1,0 +1,35 @@
+.textblock {
+    padding-top: 19px;
+    @media (min-width: 768px) {
+        padding-top: 48px;
+    }
+    .textblock__container {
+        // padding: 0 55px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        @media (min-width: 768px) {
+            grid-template-columns: 50% 50%;
+        }
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: #191C1F;
+            padding-bottom: 18px;
+            @media (min-width: 768px) {
+                font-size: 16px;
+            }
+            &:last-child {
+                padding-bottom: 0;
+            }
+            strong {
+                font-weight: 600;
+                font-size: 16px;
+                @media (min-width: 768px) {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
