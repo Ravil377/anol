@@ -1,0 +1,104 @@
+extends base/pug/base
+//- include ./components/slider/slider
+//- include ./components/links/links
+
+append variables
+    - var title = 'О компании ANOL'
+    - var pageClass = ''
+    - var menuHref = '/'
+
+block about 
+    include ./components/about/about2
+    .about__advantages 
+        .outer 
+            .inner
+                ul
+                    li 
+                        +icon('icon-adv1')
+                        | Научный подход к созданию продукции
+                    li 
+                        +icon('icon-adv2')
+                        | Конкурентные цены
+                    li 
+                        +icon('icon-adv3')
+                        | Гарантированное качество продукции
+                ul
+                    li 
+                        +icon('icon-adv4')
+                        | Оперативное производство крупных партий материалов
+                    li 
+                        +icon('icon-adv5')
+                        | Оперативная логистика
+                    li 
+                        +icon('icon-adv6')
+                        | Полный комплекс услуг
+    img(src="./images/adv.jpg" alt="Мы несем ответственность во всей аспектах нашей деятельности ")
+    .outer 
+        .inner
+            .about__advantages-bottom 
+                div
+                    .about__advantages-bottom-title 
+                        +icon('sh')
+                        | Мы несем ответственность во всей аспектах нашей деятельности 
+                        span - от закупки сырья до производства и поставки продукции
+                div
+                    p Мы несем ответственность во всей аспектах нашей деятельности - от закупки сырья до производства и поставки продукции.
+                    p Мы постоянно инвестируем в развитие наших производственных мощностей, внедряем новые программы и ищем инновационные технологии для повышения безопасности производства
+            .about__adv-prod
+                .about__adv-content 
+                    .about__adv-title В результате продукция ANOL® получила следующие преимущества:
+                    .about__adv-text 
+                        p Машиностроении, производстве и бизнесе для того, чтобы поставщики, покупатели и пользователи материалов
+                            span Испытательной лаборатории и технологов производства позволяет решать задачи создания 
+                ul 
+                    li 
+                        +icon('sun')
+                        p Стойкость
+                            span Покрытия способны выдержать атмосферное воздействие, воздействие ультрафиолета, низких и высоки температур, а также агрессивное воздействие химических веществ и тд.
+                    li 
+                        +icon('univ')
+                        p Универсальность
+                            span Каталог материалов содержит готовые решения для обработки промышленных и строительных конструкций разного назначения. Благодаря наличию у компании собственных лабораторных комплексов
+                    li 
+                        +icon('roller')
+                        p Удобство использования
+                            span Наносить составы можно как кистями и валиками, так и специальными распылителями. Мы выпускаем составы, способные высыхать даже при отрицательных температурах.
+                    li 
+                        +icon('shie')
+                        p Надежность и эстетичность
+                            span Покрытия повышают не только устойчивость поверхностей и конструкций к разным воздействиям, но и улучшают внешний вид обработанных объектов. 
+                    li 
+                        +icon('icon-adv2')
+                        p Экономичность
+                            span При высоком качестве материалы ANOL® отличаются выгодной ценой.
+                    li 
+                        +icon('icon-adv6')
+                        p Долговечность
+                            span Срок службы покрытий от 15 лет
+    .about__adv-slider.about__adv-slider-js 
+        .swiper-wrapper 
+            .swiper-slide 
+                img(src='./images/img1.jpg' alt="Фото")
+            .swiper-slide 
+                img(src='./images/img2.jpg' alt="Фото")
+            .swiper-slide 
+                img(src='./images/img3.jpg' alt="Фото")
+            .swiper-slide 
+                img(src='./images/img4.jpg' alt="Фото")
+        .swiper-pagination
+        .about__adv__button-prev-js.navigation__button.navigation__button-prev
+            <svg width="13" height="25" viewBox="0 0 13 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.4089 24.8158L13 24.2296L1.1817 12.5L13 0.770426L12.4089 0.184216L0 12.5L12.4089 24.8158Z"/>
+            </svg>
+        .about__adv__button-next-js.navigation__button.navigation__button-next
+            <svg width="13" height="25" viewBox="0 0 13 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.4089 24.8158L13 24.2296L1.1817 12.5L13 0.770426L12.4089 0.184216L0 12.5L12.4089 24.8158Z"/>
+            </svg>
+block russia
+    include ./components/russia/russia
+
+block answer
+    include ./components/answer/answer
+
+block textblock
+    include ./components/textblock/textblock
