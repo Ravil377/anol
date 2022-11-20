@@ -1,0 +1,23 @@
+extends base/pug/base
+//- include ./components/slider/slider
+//- include ./components/links/links
+
+append variables
+    - var title = 'Нефтеная отрасль'
+    - var pageClass = ''
+    - var menuHref = '/'
+
+block about 
+    include ./components/about/about
+    
+block similar
+    include ./components/similar/similar
+    
+block russia
+    include ./components/russia/russia
+
+block answer
+    include ./components/answer/answer
+
+block textblock
+    include ./components/textblock/textblock

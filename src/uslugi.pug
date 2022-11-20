@@ -1,0 +1,20 @@
+extends base/pug/base
+//- include ./components/slider/slider
+//- include ./components/links/links
+
+append variables
+    - var title = 'Наши услуги'
+    - var pageClass = ''
+    - var menuHref = '/'
+
+block uslugi
+    include ./components/uslugi/uslugi
+    
+block russia
+    include ./components/russia/russia
+
+block answer
+    include ./components/answer/answer
+
+block textblock
+    include ./components/textblock/textblock

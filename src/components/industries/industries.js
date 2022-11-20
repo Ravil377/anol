@@ -13,7 +13,7 @@ const openHref = (e) => {
     }
 }
 
-indSlide.addEventListener('click', openHref);
+indSlide && indSlide.addEventListener('click', openHref);
 
 enquire.register('screen and (min-width: 768px)', {
 	match() {

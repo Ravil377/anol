@@ -1,0 +1,31 @@
+button.help {
+    display: flex;
+    align-items: center;
+    background: unset;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #191C1F;
+    transition: .4s ease-out;
+    margin: 0 auto;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 27px;
+        bottom: -3px;
+        width: calc(100% - 27px);
+        height: 1px;
+        background: #DDE3E9;
+    }
+    &:hover {
+        color: #FF001A;
+    }
+    .icon {
+        width: 16px;
+        height: 15px;
+        margin-right: 11px;
+    }
+}

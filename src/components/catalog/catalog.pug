@@ -1,0 +1,107 @@
+.catalog 
+    .outer 
+        .inner
+            .catalog__container
+                .sidebar 
+                    .sidebar__menu 
+                        ul(onclick="menuOpen(this)")
+                            li Лакокрасочные материалы 
+                                <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.132069 3.38528C0.216659 3.45874 0.331371 3.5 0.450981 3.5C0.57059 3.5 0.685303 3.45874 0.769892 3.38528L3.00272 1.44577L5.23555 3.38528C5.32063 3.45665 5.43457 3.49615 5.55284 3.49525C5.67111 3.49436 5.78425 3.45315 5.86788 3.38051C5.95152 3.30786 5.99896 3.20959 5.99998 3.10685C6.00101 3.00412 5.95554 2.90514 5.87338 2.83125L3.32163 0.61472C3.23705 0.541265 3.12233 0.5 3.00272 0.5C2.88311 0.5 2.7684 0.541265 2.68381 0.61472L0.132069 2.83125C0.0475054 2.90472 0 3.00437 0 3.10826C0 3.21216 0.0475054 3.3118 0.132069 3.38528Z" />
+                                </svg>
+                            li 
+                                a(href="#") Серия EPANOL грунтовки
+                            li 
+                                a(href="#") Серия UPANOL грунт эмали
+                            li 
+                                a(href="#") ALANOL Эмаль по металлу
+                        ul(onclick="menuOpen(this)")
+                            li Сырье
+                                <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.132069 3.38528C0.216659 3.45874 0.331371 3.5 0.450981 3.5C0.57059 3.5 0.685303 3.45874 0.769892 3.38528L3.00272 1.44577L5.23555 3.38528C5.32063 3.45665 5.43457 3.49615 5.55284 3.49525C5.67111 3.49436 5.78425 3.45315 5.86788 3.38051C5.95152 3.30786 5.99896 3.20959 5.99998 3.10685C6.00101 3.00412 5.95554 2.90514 5.87338 2.83125L3.32163 0.61472C3.23705 0.541265 3.12233 0.5 3.00272 0.5C2.88311 0.5 2.7684 0.541265 2.68381 0.61472L0.132069 2.83125C0.0475054 2.90472 0 3.00437 0 3.10826C0 3.21216 0.0475054 3.3118 0.132069 3.38528Z" />
+                                </svg>
+                            li 
+                                a(href="#") Серия EPANOL грунтовки
+                            li 
+                                a(href="#") Серия UPANOL грунт эмали
+                            li 
+                                a(href="#") ALANOL Эмаль по металлу
+                        ul(onclick="menuOpen(this)")
+                            li Прочее
+                                <svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.132069 3.38528C0.216659 3.45874 0.331371 3.5 0.450981 3.5C0.57059 3.5 0.685303 3.45874 0.769892 3.38528L3.00272 1.44577L5.23555 3.38528C5.32063 3.45665 5.43457 3.49615 5.55284 3.49525C5.67111 3.49436 5.78425 3.45315 5.86788 3.38051C5.95152 3.30786 5.99896 3.20959 5.99998 3.10685C6.00101 3.00412 5.95554 2.90514 5.87338 2.83125L3.32163 0.61472C3.23705 0.541265 3.12233 0.5 3.00272 0.5C2.88311 0.5 2.7684 0.541265 2.68381 0.61472L0.132069 2.83125C0.0475054 2.90472 0 3.00437 0 3.10826C0 3.21216 0.0475054 3.3118 0.132069 3.38528Z" />
+                                </svg>
+                            li 
+                                a(href="#") Серия EPANOL грунтовки
+                            li 
+                                a(href="#") Серия UPANOL грунт эмали
+                            li 
+                                a(href="#") ALANOL Эмаль по металлу
+                        script.
+                            const menuOpen = (menu) => {
+                                menu.classList.toggle('_open');
+                            }
+                    .sidebar__filter 
+                .catalog__list
+                    .catalog__top 
+                        .catalog__actually
+                        .catalog__sort 
+                    .products__list 
+                        .product__item
+                            .product__img
+                                img(src="./images/pic1.jpg" alt="URANOL ТИТАН 6090")
+                                .product__label популярное
+                            .product__content
+                                .product__content-text
+                                    .product__seria Серия EPANOL
+                                    .product__title URANOL ТИТАН 6090
+                                    p Разнообразный и богатый опыт рамки и место обучения кадров способствует подготовки и реализации форм развития.
+                                        span Высокоструктурированное толстостенное покрытие
+                                .product__content-link 
+                                    +btn('Подробнее', '', true)
+                                    button(data-id="message" data-modal="true").help 
+                                        +icon('chat')
+                                        | помощь специалиста
+                        .product__item
+                            .product__img
+                                img(src="./images/pic2.png" alt="URANOL ТИТАН 6090")
+                            .product__content
+                                .product__content-text
+                                    .product__seria Серия EPANOL
+                                    .product__title Грунтовка
+                                    p Грунтовка  - высоструктурированное толстослойное покрытие с высоким сухим остатком и быстрым временем сушки для защиты стальных поверхностей. 
+                                        span Грунт-эмаль
+                                .product__content-link 
+                                    +btn('Подробнее', '', true)
+                                    button(data-id="message" data-modal="true").help 
+                                        +icon('chat')
+                                        | помощь специалиста
+                        .product__item
+                            .product__img
+                                img(src="./images/pic2.png" alt="URANOL ТИТАН 6090")
+                            .product__content
+                                .product__content-text
+                                    .product__seria Серия EPANOL
+                                    .product__title Эмаль по металлу URANOL
+                                    p Эмаль применяется для долговременной антикоррозионной защиты изделий и сооружений из стали.
+                                        span Эмаль по металлу
+                                .product__content-link 
+                                    +btn('Подробнее', '', true)
+                                    button(data-id="message" data-modal="true").help 
+                                        +icon('chat')
+                                        | помощь специалиста
+                        .product__item
+                            .product__img
+                                img(src="./images/pic1.jpg" alt="URANOL ТИТАН 6090")
+                                .product__label популярное
+                            .product__content
+                                .product__content-text
+                                    .product__seria Серия EPANOL
+                                    .product__title URANOL ТИТАН 6090
+                                    p Разнообразный и богатый опыт рамки и место обучения кадров способствует подготовки и реализации форм развития.
+                                        span Высокоструктурированное толстостенное покрытие
+                                .product__content-link 
+                                    +btn('Подробнее', '', true)
+                                    button(data-id="message" data-modal="true").help 
+                                        +icon('chat')
+                                        | помощь специалиста
