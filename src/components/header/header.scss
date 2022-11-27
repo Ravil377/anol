@@ -34,6 +34,10 @@ body.homepage {
     flex-direction: column;
 
 }
+.header {
+    z-index: 4;
+    position: relative;
+}
 .header.is-active {
     background: white;
     .header__menu-container {

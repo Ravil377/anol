@@ -1,0 +1,52 @@
+section.contact 
+    .contact__map   
+        <iframe class="desktop-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A934de6fd65e12f0ffd44869c1c3cefc65eb4b7c6884a4328b6fac0af2253e704&amp;source=constructor" width="100%" height="751" frameborder="0"></iframe>
+        <iframe class="mobil-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa205f926ec49aa5ccdfb5f4ce7ec69fa73ecc22749c1e6fb0d2ae90f73da9667&amp;source=constructor" width="100%" height="751" frameborder="0"></iframe>
+    div(onclick="openmap(this)").contact__btn.contact__btn-js   
+        <svg data-name="Слой 1" id="Слой_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2,128a2,2,0,0,1-1.93-2.53l8.19-30a64,64,0,1,1,24.64,24.5l-30.39,8A1.79,1.79,0,0,1,2,128Zm31.18-12.21a2,2,0,0,1,1,.26,60,60,0,1,0-22-21.9,2,2,0,0,1,.2,1.53l-7.49,27.5,27.83-7.33A2.22,2.22,0,0,1,33.18,115.79Z"/>
+            <path d="M64,108A13,13,0,1,1,77,95,13,13,0,0,1,64,108Zm0-22a9,9,0,1,0,9,9A9,9,0,0,0,64,86Z"/>
+            <path d="M64,73A13,13,0,0,1,51,60V33a13,13,0,0,1,26,0V60A13,13,0,0,1,64,73Zm0-49a9,9,0,0,0-9,9V60a9,9,0,0,0,18,0V33A9,9,0,0,0,64,24Z"/>
+        </svg>
+    .contact__info-container.outer.contact__info-container-js 
+        .inner
+            .contact__info
+                div(onclick="closenmap(this)").modal__close-button.contact__close-btn
+                .contact__desc Адрес офиса:
+                address г. Москва, ул. Проектируемый проезд 134, 43 км МКАД,ЛЦ Славянский мир, корпус No8, каб. 2. с 9.00 до 18.00.
+                .contact__call 
+                    .contact__desc Свяжитесь с удобным способом
+                    .contact__phones 
+                        a(href="tel:") 8 (800) 250-50-63
+                        a(href="#") 
+                            +icon('telegram')
+                        a(href="#") 
+                            +icon('whatsapp')
+                        a(href="#") 
+                            +icon('viber')
+                    a(href="") info@anol-prom.ru
+                .contact__line
+                address.contact__ul 
+                    .contact__desc Юр. Информация
+                    | Юридический адрес: 115583, г.Москва, вн.тер.г. муниципальный округ Орехово- борисово южное, ул. Ясеневая, д. 12 к. 5, помещ. 9н, ком. 4<br><br>
+                    | ИНН: 9724090855
+                .about__file
+                    a(href="#" target="_blank" download).file
+                        img(src="./images/pdf.png" alt="pdf")
+                        p Реквизиты компании ANOL
+                            span PDF 230кб
+                        div
+                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.16668 0.5C8.25508 0.5 8.33986 0.535117 8.40237 0.597625C8.46488 0.660134 8.5 0.744915 8.5 0.833315L8.5 4.83311C8.5 4.92151 8.46488 5.00629 8.40237 5.06879C8.33987 5.1313 8.25508 5.16642 8.16668 5.16642C8.07828 5.16642 7.9935 5.1313 7.93099 5.06879C7.86848 5.00629 7.83337 4.92151 7.83337 4.83311L7.83337 1.63794L1.06972 8.40225C1.03873 8.43324 1.00194 8.45782 0.961452 8.4746C0.920962 8.49137 0.877564 8.5 0.833737 8.5C0.78991 8.5 0.746512 8.49137 0.706021 8.4746C0.66553 8.45782 0.62874 8.43324 0.597749 8.40225C0.566759 8.37126 0.542176 8.33447 0.525404 8.29398C0.508632 8.25349 0.5 8.21009 0.5 8.16626C0.5 8.12244 0.508632 8.07904 0.525404 8.03855C0.542176 7.99806 0.566759 7.96127 0.597749 7.93028L7.36206 1.16663L4.16689 1.16663C4.07849 1.16663 3.99371 1.13151 3.9312 1.06901C3.8687 1.0065 3.83358 0.921717 3.83358 0.833316C3.83358 0.744915 3.8687 0.660135 3.9312 0.597626C3.99371 0.535117 4.07849 0.5 4.16689 0.5L8.16668 0.5Z" fill="black"/>
+                            </svg>
+                .contact__buttons 
+                    +btn('Заказать звонок').btn_white
+                    +btn('Написать сообщение')
+    script.
+        const info = document.querySelector('.contact__info-container-js');
+        function openmap(e) {
+            e.classList.add('_active');
+        }
+        function closenmap() {
+            document.querySelector('.contact__btn-js').classList.remove('_active');
+        }
